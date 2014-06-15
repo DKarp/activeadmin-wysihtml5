@@ -1,4 +1,6 @@
 ActiveAdmin.register Asset do
+  
+  menu false
 
   index as: :grid do |asset|
     link_to(image_tag(asset.storage.thumb("100x100#").url), admin_asset_path(asset))
